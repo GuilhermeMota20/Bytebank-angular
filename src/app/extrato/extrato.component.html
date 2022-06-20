@@ -1,11 +1,11 @@
-<section class="container">
-  <table class="tabela">
+<section *ngIf="transferencias.length > 0; else listaVazia">
+  <table class="tabela" border="0">
     <thead class="tabela__cabecalho">
       <th class="tabela__cabecalho__conteudo">Data</th>
       <th class="tabela__cabecalho__conteudo">Valor</th>
       <th class="tabela__cabecalho__conteudo">Destino</th>
     </thead>
-    <tbody class="tabela__corpo" *ngIf="transferencias.length > 0; else listaVazia">
+    <tbody class="tabela__corpo">
       <tr class="tabela__linha" *ngFor="let transferencia of transferencias">
         <td class="tabela__conteudo">{{ transferencia.data | date: 'short' }}</td>
         <td class="tabela__conteudo">{{ transferencia.valor | currency }}</td>
@@ -13,8 +13,11 @@
       </tr>
     </tbody>
   </table>
-
-  <ng-template #listaVazia>
-    <p class="feedback">Nenhum dado encontrado. Por favoz, cadastre uma nova transferência.</p>
-  </ng-template>
 </section>
+
+<ng-template #listaVazia>
+  <div class="feedback">
+    <img class="feedback__illustration" src="../../assets/illustration.svg" alt="">
+    <p class="feedback__message">Nenhum dado encontrado. Por favoz, cadastre uma nova transferência.</p>
+  </div>
+</ng-template>

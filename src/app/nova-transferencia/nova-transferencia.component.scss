@@ -1,9 +1,11 @@
 .formulario {
-  background-color: white;
-  padding: 16px;
+  width: 100%;
+  max-width: 640px;
+  background-color: #1f2029;
+  padding: 3rem;
   border-radius: 4px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  
+
   &__titulo {
     text-transform: capitalize;
     color: var(--primary);
@@ -19,7 +21,7 @@
   color: var(--primary);
 
   &__label {
-    color: inherit;
+    color: #fff;
     margin-bottom: 4px;
     font-size: 12px;
   }
@@ -27,8 +29,9 @@
   &__input {
     padding: 8px;
     border-radius: 4px;
-    color: inherit;
-    border: 2px solid;
+    color: #fff;
+    background: #181b23;
+    border: none;
     outline: none;
   }
 }

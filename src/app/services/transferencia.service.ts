@@ -11,12 +11,12 @@ export class TransferenciaService {
 
   constructor(private httpClient: HttpClient) { };
 
-  // GET
+  // GET - extrato
   todas(): Observable<Transferencia[]> {
     return this.httpClient.get<Transferencia[]>(this.url);
   }
 
-  // POST
+  // POST - nova-transferenia
   adicionar(transferencia: Transferencia): Observable<Transferencia> {
     this.hidratar(transferencia);
     return this.httpClient.post<Transferencia>(this.url, transferencia)
