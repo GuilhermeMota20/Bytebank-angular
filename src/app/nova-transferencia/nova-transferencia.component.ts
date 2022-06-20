@@ -18,7 +18,13 @@ export class NovaTransferenciaComponent {
     this.aoTransferir.emit({
       valor: this.valor,
       destino: this.destino
-    })
+    });
+    this.limpar();
   };
+
+  limpar() {
+    this.valor = 0;
+    this.destino = 0;
+  }
 
 }
