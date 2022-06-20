@@ -5,6 +5,7 @@
 }
 
 .tabela {
+  position: relative;
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -36,4 +37,13 @@
     padding: 10px;
     border-bottom: 1px solid var(--secondary);
   }
+}
+
+.feedback {
+  position: absolute;
+  padding: 10px;
+  max-width: 400px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
