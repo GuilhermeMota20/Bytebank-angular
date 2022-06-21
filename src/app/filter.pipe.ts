@@ -13,7 +13,7 @@ export class FilterPipe implements PipeTransform {
     }
     else {
       return trasnferencias.filter((trasnferencia)=> {
-        return trasnferencia.nome.toLowerCase() === filterData.toLowerCase()
+        return trasnferencia.nome.toLowerCase() === filterData.toLowerCase();
       })
     }
   }

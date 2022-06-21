@@ -1,5 +1,7 @@
 <section *ngIf="transferencias.length > 0; else listaVazia">
 
+  <h2 class="titulo">{{ 'Extrato(s)' | uppercase }}</h2>
+
   <input class="search" type="text" placeholder="Pesquise por uma transferência..." [(ngModel)]="filterData" />
 
   <table class="tabela" border="0">
