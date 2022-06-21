@@ -37,7 +37,7 @@
     text-align: left;
     margin: 0.4rem;
     padding: 4px 2rem;
-    color: var(--primary);
+    color: #fff;
     border-radius: 0.3rem;
     transition: 0.3s;
 
@@ -50,7 +50,7 @@
     margin-bottom: 10px;
     border-radius: 4px;
     background: #323442;
-    color: #fff;
+    color: #dadada;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -96,8 +96,9 @@
   }
 
   &__message {
+    position: relative;
     left: 0;
-    padding: 10px;
+    padding: 2rem;
     width: 100%;
     max-width: 450px;
     text-align: center;
@@ -105,5 +106,21 @@
     color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+
+    &::after {
+      content: '!';
+      position: absolute;
+      top: -1rem;
+      right: -1rem;
+
+      font-size: 1rem;
+      font-weight: 800;
+
+      padding: .4rem 1rem;
+      border: 1px solid #1f2029;
+      border-radius: 50%;
+
+      background: var(--primary);
+    }
   }
 }

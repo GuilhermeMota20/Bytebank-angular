@@ -20,12 +20,13 @@ header {
 
   .link {
     padding: 1rem 2rem;
-    background: #1f2029;
+    background: #7658ca;
     border-radius: 4px;
+    border: 1px solid #673ae4;
     transition: .3s;
 
     &:hover {
-      filter: brightness(.8);
+      filter: brightness(.9);
     }
   }
 

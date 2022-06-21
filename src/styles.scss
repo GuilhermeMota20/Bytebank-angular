@@ -1,5 +1,5 @@
 :root {
-  --primary: #dd2685;
+  --primary: #6247aa;
 }
 
 * {
@@ -7,6 +7,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+
+  user-select: none;
 }
 
 body {
