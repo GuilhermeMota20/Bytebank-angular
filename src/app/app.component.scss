@@ -14,8 +14,16 @@ header {
   }
 
   .logo {
+    position: relative;
     font-weight: 800;
     font-size: 2rem;
+
+    &::after {
+      content: '.';
+      position: absolute;
+      color: #181b23;
+      right: -.8rem;
+    }
   }
 
   .link {
