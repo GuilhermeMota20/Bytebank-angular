@@ -9,6 +9,7 @@ import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferen
 import { ExtratoComponent } from './extrato/extrato.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { FilterPipe } from './filter.pipe';
 
 registerLocaleData(localePt, 'pt');
 
@@ -16,7 +17,8 @@ registerLocaleData(localePt, 'pt');
   declarations: [
     AppComponent,
     NovaTransferenciaComponent,
-    ExtratoComponent
+    ExtratoComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

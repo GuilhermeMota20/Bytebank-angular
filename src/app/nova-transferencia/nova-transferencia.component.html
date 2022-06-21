@@ -1,14 +1,24 @@
 <form class="formulario" (ngSubmit)="transferir()">
   <h2 class="formulario__titulo">Nova transferencia</h2>
 
-  <div class="form-field">
-    <label class="form-field__label" for="valor">Valor</label>
-    <input class="form-field__input" id="valor" type="number" autocomplete="off" [(ngModel)]="valor" name="valor">
-  </div>
+  <div class="form">
+    <div class="form-field">
+      <label class="form-field__label" for="valor">Nome</label>
+      <input class="form-field__input" id="nome" type="string" autocomplete="off" [(ngModel)]="nome" name="nome">
+    </div>
 
-  <div class="form-field">
-    <label class="form-field__label" for="destino">Destino</label>
-    <input class="form-field__input" id="destino" type="number" autocomplete="off" [(ngModel)]="destino" name="destino">
+    <div class="form-group">
+      <div class="form-field">
+        <label class="form-field__label" for="valor">Valor</label>
+        <input class="form-field__input" id="valor" type="number" autocomplete="off" [(ngModel)]="valor" name="valor">
+      </div>
+
+      <div class="form-field">
+        <label class="form-field__label" for="destino">Destino</label>
+        <input class="form-field__input" id="destino" type="number" autocomplete="off" [(ngModel)]="destino"
+          name="destino">
+      </div>
+    </div>
   </div>
 
   <div class="botao-wrapper">

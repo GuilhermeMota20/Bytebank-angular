@@ -12,6 +12,7 @@ import { TransferenciaService } from '../services/transferencia.service';
 export class NovaTransferenciaComponent {
   @Output() aoTransferir = new EventEmitter<any>();
 
+  nome: string;
   valor: number;
   destino: number;
 
@@ -19,6 +20,7 @@ export class NovaTransferenciaComponent {
 
   transferir() {
     const valorEmitir: Transferencia = {
+      nome: this.nome,
       valor: this.valor,
       destino: this.destino
     };
@@ -34,6 +36,7 @@ export class NovaTransferenciaComponent {
   };
 
   limpar() {
+    this.nome = '';
     this.valor = 0;
     this.destino = 0;
   };

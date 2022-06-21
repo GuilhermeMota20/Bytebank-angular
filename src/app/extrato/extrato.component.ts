@@ -9,6 +9,7 @@ import { TransferenciaService } from '../services/transferencia.service';
 })
 export class ExtratoComponent implements OnInit {
   transferencias: any[];
+  filterData: string = '';
 
   constructor(private service: TransferenciaService) { };
 

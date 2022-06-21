@@ -7,7 +7,7 @@
 .tabela {
   position: relative;
   width: 100%;
-  max-width: 640px;
+  max-width: 920px;
   text-align: center;
   margin: 0 auto;
   background: #1f2029;
@@ -18,7 +18,7 @@
 
   &__cabecalho {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 1rem;
     text-align: left;
@@ -40,7 +40,7 @@
     color: #fff;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 1rem;
     text-align: left;
@@ -58,6 +58,17 @@
     padding: 10px;
     border-bottom: 1px solid var(--secondary);
   }
+}
+
+.search {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  color: #fff;
+  background: #1f2029;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
 }
 
 .feedback {
